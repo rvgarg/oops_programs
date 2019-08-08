@@ -10,6 +10,7 @@ int foo::count = 0;
     // count++;
 // }
 int main(){
-    foo f = foo(),g = foo(),h = foo(),i = foo();
+    // foo f = foo(),g = foo(),h = foo(),i = foo();
+    foo a,b,c,d;
     cout<<foo::count;
 }
