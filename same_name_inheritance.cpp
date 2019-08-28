@@ -1,19 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class parent{
-    public:
+class parent
+{
+public:
     int a = 10;
-
 };
-class child : public parent {
-    public:
+class child : public parent
+{
+public:
     int a = 20;
-    public:
-    printBothVariables(){
-        cout<<"parent class member is "<<parent::a<<"\nchild class member is "<<a;
+
+public:
+    void printBothVariables()
+    {
+        cout << "parent class member is " << parent::a << "\nchild class member is " << a;
     }
 };
-int main(){
+int main()
+{
     child ch;
     ch.printBothVariables();
 }

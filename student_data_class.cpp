@@ -22,7 +22,7 @@ public:
         cout << "enter mobile number";
         cin >> mobileNumber;
     }
-    printData()
+    void printData()
     {
         cout << rollno << "\t" << name << ",\t\t" << classOfStudent << ",\t" << mobileNumber << ",\t" << Address << endl;
     }
@@ -32,12 +32,12 @@ class studentRecord
     vector<student> v;
 
 public:
-    addStudent(student s)
+    int addStudent(student s)
     {
         v.push_back(s);
         return 0;
     }
-    printStudents()
+    void printStudents()
     {
         cout << "rollno\tname\tclassOfStudent\tmobileNumber\tAddress\n";
         for (int i = 0; i < v.size(); i++)
@@ -66,6 +66,6 @@ int main()
         }
 
     } while (flag);
-    cout<<"entered records are :"<<endl;
+    cout << "entered records are :" << endl;
     record.printStudents();
 }

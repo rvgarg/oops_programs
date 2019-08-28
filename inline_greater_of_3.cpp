@@ -1,6 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-inline int max1(int a, int b, int c){
+inline int max1(int a, int b, int c)
+{
     if (a > b)
     {
         if (a > c)
@@ -11,7 +12,6 @@ inline int max1(int a, int b, int c){
         {
             return c;
         }
-        
     }
     else
     {
@@ -19,14 +19,15 @@ inline int max1(int a, int b, int c){
         {
             return b;
         }
-        else 
+        else
         {
             return c;
         }
     }
 }
-int main(){
+int main()
+{
     int a, b, c;
-    cin>>a>>b>>c;
-    cout<<"greatest no : "<<max1(a, b, c);
+    cin >> a >> b >> c;
+    cout << "greatest no : " << max1(a, b, c);
 }

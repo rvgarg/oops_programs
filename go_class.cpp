@@ -1,14 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Go{
-    public:
+class Go
+{
+public:
     string str;
-    void display(){
-        cout<<"hii "<<str;
+    void display()
+    {
+        cout << "hii " << str;
     }
 };
-int main(){
+int main()
+{
     Go g1;
-    cin>>g1.str;
+    cin >> g1.str;
     g1.display();
 }
